@@ -52,6 +52,7 @@ public class SiteTest {
 
     @After
     public void quitTest(){
+        System.out.println("The test has been completed");
         driver.quit();
     }
 }
