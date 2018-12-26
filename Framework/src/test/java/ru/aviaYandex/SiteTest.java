@@ -14,8 +14,6 @@ public class SiteTest {
     @Before
     public void initialDriver(){
         System.setProperty("webdriver.chrome.driver", "/home/maks/chromedriver");
-        driver = new ChromeDriver();
-
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         options.addArguments("start-maximized"); // open Browser in maximized mode
@@ -24,7 +22,7 @@ public class SiteTest {
         options.addArguments("--disable-gpu"); // applicable to windows os only
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("--no-sandbox"); // Bypass OS security model
-
+        driver = new ChromeDriver(options);
     }
 
     @Test
