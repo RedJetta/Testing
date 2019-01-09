@@ -22,8 +22,8 @@ public class FirstTest extends BaseTest {
         search.typeInputFrom("Москва");
         search.typeInputTo("Санкт-Питербург");
         search.clickOnCalendar();
-        search.selectDepartureDate("13", "08", "2018");
-        search.selectArrivalDate("14", "08", "2018");
+        search.selectDepartureDate("13", "08", "2019");
+        search.selectArrivalDate("14", "08", "2019");
         search.clickOnPeople();
         search.addAdults(2);
         search.clickOnSearch();
